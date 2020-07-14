@@ -24,7 +24,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: '',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -90,4 +90,14 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+
+  pwa: {
+    manifest: {
+      name: 'Direct Whatsapp without save number',
+      short_name: 'Direct Whatsapp',
+      lang: 'en',
+      display: 'standalone',
+      description: 'Simple tool for send Whatsapp message without save number',
+    },
+  },
 }

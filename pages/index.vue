@@ -25,11 +25,10 @@
 
     <v-snackbar v-model="snackbar">
       {{ snackbarText }}
-
       <template v-slot:action="{ attrs }">
-        <v-btn color="pink" text v-bind="attrs" @click="snackbar = false">
-          Close
-        </v-btn>
+        <v-btn color="pink" text v-bind="attrs" @click="snackbar = false"
+          >Close</v-btn
+        >
       </template>
     </v-snackbar>
   </div>
@@ -80,7 +79,17 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Kirim pesan whatsapp tanpa menyimpan nomor telepon',
+        content: 'Simple tool for send Whatsapp message without save number',
+      },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: 'Direct Whatsapp',
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content: 'Simple tool for send Whatsapp message without save number',
       },
     ],
     noscript: [{ innerHTML: 'Body No Scripts', body: true }],
