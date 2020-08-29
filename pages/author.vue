@@ -45,6 +45,33 @@ export default {
       ],
     }
   },
+  head: {
+    title: 'Author',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Author of direct whatsapp tools',
+      },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        content: 'Author',
+      },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content: 'Author of direct whatsapp tools',
+      },
+    ],
+    noscript: [{ innerHTML: 'Body No Scripts', body: true }],
+    script: [
+      { src: '/head.js' },
+      // Supported since 1.0
+      { src: '/body.js', body: true },
+      { src: '/defer.js', defer: '' },
+    ],
+  },
 }
 </script>
 
