@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "copy": "cp -R .well-known dist/",
     "dev": "nuxt",
-    "build": "nuxt generate",
+    "build": "nuxt generate && npm run copy",
     "start": "nuxt start",
     "export": "nuxt export",
     "serve": "nuxt serve",
