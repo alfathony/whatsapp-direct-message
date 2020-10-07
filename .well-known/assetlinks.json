@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.alfathony.whatsapp",
+      "sha256_cert_fingerprints": [
+        "SHA256: 0F:41:3F:70:08:60:B4:01:3F:D7:E8:C8:6B:BF:34:BE:05:A6:38:B3:DA:FA:F5:0A:11:FF:2B:22:9B:E5:48:3B"
+      ]
+    }
+  }
+]
